@@ -1,0 +1,217 @@
+
+.refHeader {
+    height: 100vh;
+    background-image: url('../img/refbg-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+ 
+}
+
+.reflogo {
+    width: 800px;
+    height: 300px;
+    background: url('../img/minoxi-logo.png') center center no-repeat;
+    background-size: contain;
+    
+}
+
+.ref_under_logo p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    font-size: 3em;
+    font-style: italic;
+    overflow: hidden;
+  }
+  .ref_under_logo p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    /* opacity: 0; */
+  }
+
+  .reflogoanim {
+      opacity: 0;
+  }
+
+/* ************ REF MAIN PAGE ************ */
+.card {
+    color: #ececec;
+    background-color: #202122;
+    border: none;
+}
+
+.refbtn {
+    color: #ececec;
+    background-color: #cc1717;
+}
+
+.refbtn:hover {
+    color: #ececec;
+    background-color: rgba(204, 23, 23, 0.9);
+}
+
+/* ************ REF Galleries ************ */
+.reftitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h1.reftitle {
+   color: #cc1717;
+   font-weight: 900;
+   letter-spacing: 0.1em;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.gallery {
+    text-align: center;
+    padding: 0 2em;
+}
+
+.gallery a {
+    overflow: hidden;
+}
+
+.gallery img:hover {
+    transform: scale(1.4);
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 10;	
+}
+
+
+.youtube iframe {
+    background-color: red;
+}
+
+
+
+
+
+
+/* ************ MEDIA QUERIES ************ */
+
+
+@media (max-width:992px) {
+    /* HEADER */
+    .reflogo {
+        width: 700px;
+        height: 240px;
+    }
+}
+
+@media (max-width:860px) {
+    /* HEADER */
+    .reflogo {
+        width: 600px;
+        height: 200px;
+    }
+}
+
+
+@media (max-width:768px) {
+    /* HEADER */
+    .reflogo {
+        width: 500px;
+        height: 180px;
+    }
+    .ref_under_logo p {
+        font-size: 2.4em;    
+    }
+}
+
+@media (max-width:640px) {
+    /* HEADER */
+    .reflogo {
+        width: 400px;
+        height: 150px;
+    }
+
+    .ref_under_logo p {
+        font-size: 2em;    
+    }
+
+    /* MAIN */
+    h1.reftitle {
+        font-size: 1.6em;
+    }
+
+    .gallery {
+        padding: 0;
+    }
+}
+
+@media (max-width:576px) {
+    /* MAIN */
+    .gallery img:hover {
+        transform: scale(1);
+        transition: 0.3s ease;
+        position: relative;
+        z-index: 10;	
+    }
+
+}
+
+@media (max-width:540px) {
+    /* HEADER */
+    .reflogo {
+        width: 320px;
+        height: 130px;
+    }
+
+    h1.reftitle {
+        margin-bottom: 0.5em;
+    }
+
+    .ref_under_logo p {
+        font-size: 1.5em;    
+    }
+}
+
+@media (max-width:400px) {
+   
+    /* HEADER */
+    .reflogo {
+        width: 250px;
+        height: 110px;
+    }
+
+    .ref_under_logo p {
+        font-size: 1.2em;    
+    }
+
+}
+
+@media (max-height:420px) and (orientation: landscape){
+    /* HEADER */
+    .refHeader {
+        padding-top: 15vh;
+    }
+
+    .reflogo {
+        width: 390px;
+        height: 130px;
+    }
+
+    .ref_under_logo p {
+        font-size: 1.2em;    
+    }
+} 
+
+@media (max-height:370px) and (orientation: landscape){
+    /* HEADER */
+
+    .reflogo {
+        width: 300px;
+        height: 110px;
+    }
+
+   
+} 
